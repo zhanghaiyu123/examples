@@ -8,260 +8,87 @@
   body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
     margin: 24px;
-    color: #1f2933;
-    background: #fafafa;
+    background: #f7f8fa;
+    color: #1f2937;
   }
-  h1 { margin-bottom: 4px; }
-  h2 { margin-top: 36px; }
-  .muted { color: #667085; }
+  h1 { margin-bottom: 8px; }
+  .muted { color: #6b7280; }
   table {
     border-collapse: collapse;
-    margin: 16px 0;
+    margin: 16px 0 28px;
     background: white;
   }
   th, td {
-    border: 1px solid #d0d5dd;
+    border: 1px solid #d8dee8;
     padding: 8px 12px;
-    text-align: left;
   }
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 18px;
   }
   .card {
     background: white;
-    border: 1px solid #d0d5dd;
+    border: 1px solid #d8dee8;
     border-radius: 8px;
-    padding: 12px;
+    padding: 14px;
   }
   .label {
     font-weight: 700;
+    font-size: 18px;
     margin-bottom: 10px;
   }
   img {
     max-width: 100%;
     height: auto;
     display: block;
-    border: 1px solid #eaecf0;
-    background: white;
   }
-  .open {
+  a {
     display: inline-block;
-    margin-top: 8px;
+    margin-top: 10px;
   }
 </style>
 </head>
 <body>
 <h1>Wavelet ASR Report - textures_plant_2k_plant-02_2k_x4_cropx1001_y407_s256_5faa36fbb4</h1>
-<p class="muted">Run folder: /home/chenjunfeng/GSASR/asr_demo/runs/textures_plant_2k_plant-02_2k_x4_cropx1001_y407_s256_5faa36fbb4</p>
+<p class="muted">Run: textures_plant_2k_plant-02_2k_x4_cropx1001_y407_s256_5faa36fbb4</p>
 
 <h2>Metrics</h2>
 <table><tr><th>model</th><th>PSNR</th><th>SSIM</th><th>LPIPS</th><th>DISTS</th></tr><tr><td>Wavelet continuous</td><td>30.1564</td><td>0.8241</td><td>0.087</td><td>0.117</td></tr><tr><td>Wavelet SwinIR DF2K</td><td>31.4901</td><td>0.8654</td><td>0.0721</td><td>0.1042</td></tr></table>
 
-<h2>Full Results</h2>
-<div class="grid">
-<p class='muted'>No full-result images detected.</p>
-</div>
-
-<h2>Crop / Zoom Results</h2>
+<h2>Results</h2>
 <div class="grid">
 
     <article class="card">
-      <div class="label">Wavelet SwinIR DF2K</div>
-      <a href="assets/originals/display__03_wavelet_swinir_df2k_preview.jpg" target="_blank">
-        <img src="assets/previews/display__03_wavelet_swinir_df2k_preview.jpg" alt="Wavelet SwinIR DF2K">
+      <div class="label">GT</div>
+      <a href="assets/originals/share__originals__00_gt.png" target="_blank">
+        <img src="assets/previews/share__originals__00_gt.jpg" alt="GT">
       </a>
-      <a class="open" href="assets/originals/display__03_wavelet_swinir_df2k_preview.jpg" target="_blank">Open original PNG</a>
+      <a class="open" href="assets/originals/share__originals__00_gt.png" target="_blank">Open original PNG</a>
     </article>
     
     <article class="card">
-      <div class="label">Wavelet SwinIR DF2K</div>
-      <a href="assets/originals/outputs__wavelet_swinir_df2k.png" target="_blank">
-        <img src="assets/previews/outputs__wavelet_swinir_df2k.jpg" alt="Wavelet SwinIR DF2K">
+      <div class="label">LR bicubic</div>
+      <a href="assets/originals/share__originals__01_lr_bicubic_x4_upsampled.png" target="_blank">
+        <img src="assets/previews/share__originals__01_lr_bicubic_x4_upsampled.jpg" alt="LR bicubic">
       </a>
-      <a class="open" href="assets/originals/outputs__wavelet_swinir_df2k.png" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">Wavelet SwinIR DF2K</div>
-      <a href="assets/originals/zoom__wavelet_swinir_df2k_crop_x0_y0_s256_z3.png" target="_blank">
-        <img src="assets/previews/zoom__wavelet_swinir_df2k_crop_x0_y0_s256_z3.jpg" alt="Wavelet SwinIR DF2K">
-      </a>
-      <a class="open" href="assets/originals/zoom__wavelet_swinir_df2k_crop_x0_y0_s256_z3.png" target="_blank">Open original PNG</a>
+      <a class="open" href="assets/originals/share__originals__01_lr_bicubic_x4_upsampled.png" target="_blank">Open original PNG</a>
     </article>
     
     <article class="card">
       <div class="label">Wavelet continuous</div>
-      <a href="assets/originals/display__02_wavelet_continuous_preview.jpg" target="_blank">
-        <img src="assets/previews/display__02_wavelet_continuous_preview.jpg" alt="Wavelet continuous">
+      <a href="assets/originals/share__originals__02_wavelet_continuous.png" target="_blank">
+        <img src="assets/previews/share__originals__02_wavelet_continuous.jpg" alt="Wavelet continuous">
       </a>
-      <a class="open" href="assets/originals/display__02_wavelet_continuous_preview.jpg" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">Wavelet continuous</div>
-      <a href="assets/originals/outputs__wavelet_continuous.png" target="_blank">
-        <img src="assets/previews/outputs__wavelet_continuous.jpg" alt="Wavelet continuous">
-      </a>
-      <a class="open" href="assets/originals/outputs__wavelet_continuous.png" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">Wavelet continuous</div>
-      <a href="assets/originals/zoom__wavelet_continuous_crop_x0_y0_s256_z3.png" target="_blank">
-        <img src="assets/previews/zoom__wavelet_continuous_crop_x0_y0_s256_z3.jpg" alt="Wavelet continuous">
-      </a>
-      <a class="open" href="assets/originals/zoom__wavelet_continuous_crop_x0_y0_s256_z3.png" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">plant-02_2k</div>
-      <a href="assets/originals/GT__plant-02_2k.png" target="_blank">
-        <img src="assets/previews/GT__plant-02_2k.jpg" alt="plant-02_2k">
-      </a>
-      <a class="open" href="assets/originals/GT__plant-02_2k.png" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">00_gt_preview</div>
-      <a href="assets/originals/display__00_gt_preview.jpg" target="_blank">
-        <img src="assets/previews/display__00_gt_preview.jpg" alt="00_gt_preview">
-      </a>
-      <a class="open" href="assets/originals/display__00_gt_preview.jpg" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">01_lr_bicubic_x4_upsampled_preview</div>
-      <a href="assets/originals/display__01_lr_bicubic_x4_upsampled_preview.jpg" target="_blank">
-        <img src="assets/previews/display__01_lr_bicubic_x4_upsampled_preview.jpg" alt="01_lr_bicubic_x4_upsampled_preview">
-      </a>
-      <a class="open" href="assets/originals/display__01_lr_bicubic_x4_upsampled_preview.jpg" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">plant-02_2k_lr_bicubic_x4</div>
-      <a href="assets/originals/vis__plant-02_2k_lr_bicubic_x4.png" target="_blank">
-        <img src="assets/previews/vis__plant-02_2k_lr_bicubic_x4.jpg" alt="plant-02_2k_lr_bicubic_x4">
-      </a>
-      <a class="open" href="assets/originals/vis__plant-02_2k_lr_bicubic_x4.png" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">gt_crop_x0_y0_s256_z3</div>
-      <a href="assets/originals/zoom__gt_crop_x0_y0_s256_z3.png" target="_blank">
-        <img src="assets/previews/zoom__gt_crop_x0_y0_s256_z3.jpg" alt="gt_crop_x0_y0_s256_z3">
-      </a>
-      <a class="open" href="assets/originals/zoom__gt_crop_x0_y0_s256_z3.png" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">lr_bicubic_x4_upsampled_crop_x0_y0_s256_z3</div>
-      <a href="assets/originals/zoom__lr_bicubic_x4_upsampled_crop_x0_y0_s256_z3.png" target="_blank">
-        <img src="assets/previews/zoom__lr_bicubic_x4_upsampled_crop_x0_y0_s256_z3.jpg" alt="lr_bicubic_x4_upsampled_crop_x0_y0_s256_z3">
-      </a>
-      <a class="open" href="assets/originals/zoom__lr_bicubic_x4_upsampled_crop_x0_y0_s256_z3.png" target="_blank">Open original PNG</a>
-    </article>
-    
-</div>
-
-<h2>All Images</h2>
-<div class="grid">
-
-    <article class="card">
-      <div class="label">Wavelet SwinIR DF2K</div>
-      <a href="assets/originals/display__03_wavelet_swinir_df2k_preview.jpg" target="_blank">
-        <img src="assets/previews/display__03_wavelet_swinir_df2k_preview.jpg" alt="Wavelet SwinIR DF2K">
-      </a>
-      <a class="open" href="assets/originals/display__03_wavelet_swinir_df2k_preview.jpg" target="_blank">Open original PNG</a>
+      <a class="open" href="assets/originals/share__originals__02_wavelet_continuous.png" target="_blank">Open original PNG</a>
     </article>
     
     <article class="card">
       <div class="label">Wavelet SwinIR DF2K</div>
-      <a href="assets/originals/outputs__wavelet_swinir_df2k.png" target="_blank">
-        <img src="assets/previews/outputs__wavelet_swinir_df2k.jpg" alt="Wavelet SwinIR DF2K">
+      <a href="assets/originals/share__originals__03_wavelet_swinir_df2k.png" target="_blank">
+        <img src="assets/previews/share__originals__03_wavelet_swinir_df2k.jpg" alt="Wavelet SwinIR DF2K">
       </a>
-      <a class="open" href="assets/originals/outputs__wavelet_swinir_df2k.png" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">Wavelet SwinIR DF2K</div>
-      <a href="assets/originals/zoom__wavelet_swinir_df2k_crop_x0_y0_s256_z3.png" target="_blank">
-        <img src="assets/previews/zoom__wavelet_swinir_df2k_crop_x0_y0_s256_z3.jpg" alt="Wavelet SwinIR DF2K">
-      </a>
-      <a class="open" href="assets/originals/zoom__wavelet_swinir_df2k_crop_x0_y0_s256_z3.png" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">Wavelet continuous</div>
-      <a href="assets/originals/display__02_wavelet_continuous_preview.jpg" target="_blank">
-        <img src="assets/previews/display__02_wavelet_continuous_preview.jpg" alt="Wavelet continuous">
-      </a>
-      <a class="open" href="assets/originals/display__02_wavelet_continuous_preview.jpg" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">Wavelet continuous</div>
-      <a href="assets/originals/outputs__wavelet_continuous.png" target="_blank">
-        <img src="assets/previews/outputs__wavelet_continuous.jpg" alt="Wavelet continuous">
-      </a>
-      <a class="open" href="assets/originals/outputs__wavelet_continuous.png" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">Wavelet continuous</div>
-      <a href="assets/originals/zoom__wavelet_continuous_crop_x0_y0_s256_z3.png" target="_blank">
-        <img src="assets/previews/zoom__wavelet_continuous_crop_x0_y0_s256_z3.jpg" alt="Wavelet continuous">
-      </a>
-      <a class="open" href="assets/originals/zoom__wavelet_continuous_crop_x0_y0_s256_z3.png" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">plant-02_2k</div>
-      <a href="assets/originals/GT__plant-02_2k.png" target="_blank">
-        <img src="assets/previews/GT__plant-02_2k.jpg" alt="plant-02_2k">
-      </a>
-      <a class="open" href="assets/originals/GT__plant-02_2k.png" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">00_gt_preview</div>
-      <a href="assets/originals/display__00_gt_preview.jpg" target="_blank">
-        <img src="assets/previews/display__00_gt_preview.jpg" alt="00_gt_preview">
-      </a>
-      <a class="open" href="assets/originals/display__00_gt_preview.jpg" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">01_lr_bicubic_x4_upsampled_preview</div>
-      <a href="assets/originals/display__01_lr_bicubic_x4_upsampled_preview.jpg" target="_blank">
-        <img src="assets/previews/display__01_lr_bicubic_x4_upsampled_preview.jpg" alt="01_lr_bicubic_x4_upsampled_preview">
-      </a>
-      <a class="open" href="assets/originals/display__01_lr_bicubic_x4_upsampled_preview.jpg" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">plant-02_2k_lr_bicubic_x4</div>
-      <a href="assets/originals/vis__plant-02_2k_lr_bicubic_x4.png" target="_blank">
-        <img src="assets/previews/vis__plant-02_2k_lr_bicubic_x4.jpg" alt="plant-02_2k_lr_bicubic_x4">
-      </a>
-      <a class="open" href="assets/originals/vis__plant-02_2k_lr_bicubic_x4.png" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">gt_crop_x0_y0_s256_z3</div>
-      <a href="assets/originals/zoom__gt_crop_x0_y0_s256_z3.png" target="_blank">
-        <img src="assets/previews/zoom__gt_crop_x0_y0_s256_z3.jpg" alt="gt_crop_x0_y0_s256_z3">
-      </a>
-      <a class="open" href="assets/originals/zoom__gt_crop_x0_y0_s256_z3.png" target="_blank">Open original PNG</a>
-    </article>
-    
-    <article class="card">
-      <div class="label">lr_bicubic_x4_upsampled_crop_x0_y0_s256_z3</div>
-      <a href="assets/originals/zoom__lr_bicubic_x4_upsampled_crop_x0_y0_s256_z3.png" target="_blank">
-        <img src="assets/previews/zoom__lr_bicubic_x4_upsampled_crop_x0_y0_s256_z3.jpg" alt="lr_bicubic_x4_upsampled_crop_x0_y0_s256_z3">
-      </a>
-      <a class="open" href="assets/originals/zoom__lr_bicubic_x4_upsampled_crop_x0_y0_s256_z3.png" target="_blank">Open original PNG</a>
+      <a class="open" href="assets/originals/share__originals__03_wavelet_swinir_df2k.png" target="_blank">Open original PNG</a>
     </article>
     
 </div>
