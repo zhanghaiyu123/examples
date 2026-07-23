@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ASR Comparison Report</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 28px; color: #202124; background: #fafafa; }
+  h1 { margin: 0 0 8px; }
+  .meta { color: #5f6368; margin-bottom: 24px; }
+  table { border-collapse: collapse; margin: 16px 0 28px; background: white; }
+  th, td { border: 1px solid #ddd; padding: 8px 12px; text-align: left; }
+  th { background: #f1f3f4; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; }
+  .card { background: white; border: 1px solid #e0e0e0; border-radius: 8px; padding: 12px; }
+  .card h3 { margin: 0 0 10px; font-size: 16px; }
+  img { width: 100%; height: auto; display: block; border-radius: 4px; }
+  a { color: #0b57d0; }
+</style>
+</head>
+<body>
+<h1>ASR Comparison Report</h1>
+<div class="meta">Run: textures_plant_2k_plant-02_2k_x4_cropx1001_y407_s256_5faa36fbb4 · Scale: x4</div>
+<h2>Metrics</h2>
+<table><tr><th>model</th><th>PSNR</th><th>SSIM</th><th>LPIPS</th><th>DISTS</th></tr><tr><td>Wavelet continuous</td><td>30.1564</td><td>0.8241</td><td>0.087</td><td>0.117</td></tr><tr><td>Wavelet SwinIR DF2K</td><td>31.4901</td><td>0.8654</td><td>0.0721</td><td>0.1042</td></tr></table>
+<h2>Full Results Preview</h2>
+<div class="grid">
+        <article class="card">
+          <h3>GT</h3>
+          <a href="originals/00_gt.png" target="_blank"><img src="previews/00_gt_preview.jpg" alt="GT"></a>
+          <p><a href="originals/00_gt.png" target="_blank">Open original PNG</a></p>
+        </article>
+        
+        <article class="card">
+          <h3>LR bicubic x4, upsampled</h3>
+          <a href="originals/01_lr_bicubic_x4_upsampled.png" target="_blank"><img src="previews/01_lr_bicubic_x4_upsampled_preview.jpg" alt="LR bicubic x4, upsampled"></a>
+          <p><a href="originals/01_lr_bicubic_x4_upsampled.png" target="_blank">Open original PNG</a></p>
+        </article>
+        
+        <article class="card">
+          <h3>Wavelet continuous</h3>
+          <a href="originals/02_wavelet_continuous.png" target="_blank"><img src="previews/02_wavelet_continuous_preview.jpg" alt="Wavelet continuous"></a>
+          <p><a href="originals/02_wavelet_continuous.png" target="_blank">Open original PNG</a></p>
+        </article>
+        
+        <article class="card">
+          <h3>Wavelet SwinIR DF2K</h3>
+          <a href="originals/03_wavelet_swinir_df2k.png" target="_blank"><img src="previews/03_wavelet_swinir_df2k_preview.jpg" alt="Wavelet SwinIR DF2K"></a>
+          <p><a href="originals/03_wavelet_swinir_df2k.png" target="_blank">Open original PNG</a></p>
+        </article>
+        </div>
+<h2>Crop Zoom Comparison</h2>
+<div class="grid">
+        <article class="card">
+          <h3>GT crop</h3>
+          <a href="crops/00_gt_crop.png" target="_blank"><img src="crops/00_gt_crop.png" alt="GT crop"></a>
+        </article>
+        
+        <article class="card">
+          <h3>LR bicubic x4, upsampled crop</h3>
+          <a href="crops/01_lr_bicubic_x4_upsampled_crop.png" target="_blank"><img src="crops/01_lr_bicubic_x4_upsampled_crop.png" alt="LR bicubic x4, upsampled crop"></a>
+        </article>
+        
+        <article class="card">
+          <h3>Wavelet continuous crop</h3>
+          <a href="crops/02_wavelet_continuous_crop.png" target="_blank"><img src="crops/02_wavelet_continuous_crop.png" alt="Wavelet continuous crop"></a>
+        </article>
+        
+        <article class="card">
+          <h3>Wavelet SwinIR DF2K crop</h3>
+          <a href="crops/03_wavelet_swinir_df2k_crop.png" target="_blank"><img src="crops/03_wavelet_swinir_df2k_crop.png" alt="Wavelet SwinIR DF2K crop"></a>
+        </article>
+        </div>
+</body>
+</html>
