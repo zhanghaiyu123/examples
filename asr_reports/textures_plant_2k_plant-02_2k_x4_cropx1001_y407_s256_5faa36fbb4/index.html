@@ -11,31 +11,20 @@
     background: #f7f8fa;
     color: #1f2937;
   }
-  h1 { margin-bottom: 8px; }
   .muted { color: #6b7280; }
-  table {
-    border-collapse: collapse;
-    margin: 16px 0 28px;
-    background: white;
-  }
-  th, td {
-    border: 1px solid #d8dee8;
-    padding: 8px 12px;
-  }
   .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 18px;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 16px;
   }
   .card {
     background: white;
-    border: 1px solid #d8dee8;
+    border: 1px solid #d0d7de;
     border-radius: 8px;
-    padding: 14px;
+    padding: 12px;
   }
   .label {
     font-weight: 700;
-    font-size: 18px;
     margin-bottom: 10px;
   }
   img {
@@ -43,9 +32,13 @@
     height: auto;
     display: block;
   }
-  a {
-    display: inline-block;
-    margin-top: 10px;
+  table {
+    border-collapse: collapse;
+    background: white;
+  }
+  th, td {
+    border: 1px solid #d0d7de;
+    padding: 8px 12px;
   }
 </style>
 </head>
@@ -56,7 +49,7 @@
 <h2>Metrics</h2>
 <table><tr><th>model</th><th>PSNR</th><th>SSIM</th><th>LPIPS</th><th>DISTS</th></tr><tr><td>Wavelet continuous</td><td>30.1564</td><td>0.8241</td><td>0.087</td><td>0.117</td></tr><tr><td>Wavelet SwinIR DF2K</td><td>31.4901</td><td>0.8654</td><td>0.0721</td><td>0.1042</td></tr></table>
 
-<h2>Results</h2>
+<h2>Full Results</h2>
 <div class="grid">
 
     <article class="card">
@@ -67,6 +60,7 @@
       <a class="open" href="assets/originals/share__originals__00_gt.png" target="_blank">Open original PNG</a>
     </article>
     
+
     <article class="card">
       <div class="label">LR bicubic</div>
       <a href="assets/originals/share__originals__01_lr_bicubic_x4_upsampled.png" target="_blank">
@@ -75,6 +69,7 @@
       <a class="open" href="assets/originals/share__originals__01_lr_bicubic_x4_upsampled.png" target="_blank">Open original PNG</a>
     </article>
     
+
     <article class="card">
       <div class="label">Wavelet continuous</div>
       <a href="assets/originals/share__originals__02_wavelet_continuous.png" target="_blank">
@@ -83,12 +78,53 @@
       <a class="open" href="assets/originals/share__originals__02_wavelet_continuous.png" target="_blank">Open original PNG</a>
     </article>
     
+
     <article class="card">
       <div class="label">Wavelet SwinIR DF2K</div>
       <a href="assets/originals/share__originals__03_wavelet_swinir_df2k.png" target="_blank">
         <img src="assets/previews/share__originals__03_wavelet_swinir_df2k.jpg" alt="Wavelet SwinIR DF2K">
       </a>
       <a class="open" href="assets/originals/share__originals__03_wavelet_swinir_df2k.png" target="_blank">Open original PNG</a>
+    </article>
+    
+</div>
+
+<h2>Crop / Zoom Results</h2>
+<div class="grid">
+
+    <article class="card">
+      <div class="label">GT</div>
+      <a href="assets/originals/share__crops__00_gt_crop.png" target="_blank">
+        <img src="assets/previews/share__crops__00_gt_crop.jpg" alt="GT">
+      </a>
+      <a class="open" href="assets/originals/share__crops__00_gt_crop.png" target="_blank">Open original PNG</a>
+    </article>
+    
+
+    <article class="card">
+      <div class="label">LR bicubic</div>
+      <a href="assets/originals/share__crops__01_lr_bicubic_x4_upsampled_crop.png" target="_blank">
+        <img src="assets/previews/share__crops__01_lr_bicubic_x4_upsampled_crop.jpg" alt="LR bicubic">
+      </a>
+      <a class="open" href="assets/originals/share__crops__01_lr_bicubic_x4_upsampled_crop.png" target="_blank">Open original PNG</a>
+    </article>
+    
+
+    <article class="card">
+      <div class="label">Wavelet continuous</div>
+      <a href="assets/originals/share__crops__02_wavelet_continuous_crop.png" target="_blank">
+        <img src="assets/previews/share__crops__02_wavelet_continuous_crop.jpg" alt="Wavelet continuous">
+      </a>
+      <a class="open" href="assets/originals/share__crops__02_wavelet_continuous_crop.png" target="_blank">Open original PNG</a>
+    </article>
+    
+
+    <article class="card">
+      <div class="label">Wavelet SwinIR DF2K</div>
+      <a href="assets/originals/share__crops__03_wavelet_swinir_df2k_crop.png" target="_blank">
+        <img src="assets/previews/share__crops__03_wavelet_swinir_df2k_crop.jpg" alt="Wavelet SwinIR DF2K">
+      </a>
+      <a class="open" href="assets/originals/share__crops__03_wavelet_swinir_df2k_crop.png" target="_blank">Open original PNG</a>
     </article>
     
 </div>
